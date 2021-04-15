@@ -1,0 +1,275 @@
+.header {
+  position: relative;
+  z-index: -1;
+  background-color: #e39a3b;
+  height: 100vh;
+
+  @media (max-width: $break-point-tablet) {
+    background-color: $c-gray;
+  }
+
+  &__background {
+    position: absolute;
+    height: 100%;
+    min-width: 70vw;
+    z-index: -2;
+    background-image: url("./../images/bake-cream-puff-cup.png");
+    background-size: cover;
+    background-position: center;
+
+    @media (max-width: $break-point-tablet) {
+      width: 100vw;
+      opacity: 0.8;
+    }
+    @media (min-width: 2000px) {
+      min-width: 60%;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    padding: 34px 59px;
+    margin: 0 auto;
+    max-width: 1600px;
+    height: 80%;
+
+    @media (max-width: $break-point-tablet) {
+      height: 100%;
+    }
+
+    @media (max-width: $break-point-mobile) {
+      padding: 15px;
+    }
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+  }
+
+  &__logo {
+    height: 48px;
+    width: 112px;
+    object-fit: cover;
+    object-position: top;
+
+    @media (max-width: $break-point-mobile) {
+      height: 42px;
+      width: 84px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: $break-point-notebook) {
+      align-items: flex-start;
+    }
+
+    @media (max-width: $break-point-tablet) {
+      position: fixed;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 50vw;
+      background-color: #e39a3b;
+      z-index: 1;
+      flex-direction: column;
+      padding: 85px 50px;
+      transform: translateX(100%);
+      overflow: scroll;
+    }
+
+    &--active {
+      @media (max-width: $break-point-tablet) {
+        transform: none;
+      }
+    }
+  }
+
+  &__call {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    @media (max-width: $break-point-notebook) {
+      flex-direction: column;
+    }
+  }
+
+  &__call-number {
+    @media (max-width: $break-point-tablet) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__call-button {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 5px 15px;
+    background: #f1cc9d;
+    border-radius: 40px;
+
+    @media (max-width: $break-point-tablet) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__select {
+    background-color: transparent;
+  }
+
+  &__burger {
+    position: relative;
+    z-index: 3;
+    display: none;
+    height: 25px;
+    width: 25px;
+    background-image: url("./../images/burger.svg");
+    background-size: cover;
+
+    @media (max-width: $break-point-tablet) {
+      display: block;
+    }
+
+    &--active {
+      background-image: url("./../images/close.svg");
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    margin-top: 50px;
+
+    @media (max-width: $break-point-tablet) {
+      flex-direction: column;
+      justify-content: space-around;
+    }
+  }
+
+  &__main-title {
+    font-family: "Cookie", sans-serif;
+    font-size: 160px;
+    line-height: 177px;
+    color: #412d22;
+    margin-bottom: 20px;
+
+    @media (max-width: $break-point-notebook) {
+      margin-top: -250px;
+      font-size: 140px;
+    }
+    @media (max-width: $break-point-tablet) {
+      margin: 0;
+    }
+    @media (max-width: $break-point-mobile) {
+      font-size: 100px;
+      line-height: 80%;
+    }
+  }
+
+  &__text {
+    font-size: 26px;
+    line-height: 39px;
+    margin-bottom: 25px;
+
+    @media (max-width: $break-point-mobile) {
+      font-size: 16px;
+    }
+  }
+
+  &__button {
+    padding: 9px 38px;
+    background: #e39a3b;
+    border-radius: 40px;
+  }
+
+  &__left-bottom {
+    align-self: center;
+  }
+
+  &__right-bottom {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+
+    @media (max-width: $break-point-tablet) {
+      height: 25%;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+
+  }
+  &__switch {
+    height: 16px;
+    width: 26px;
+    margin-right: 10px;
+    background-image: url("./../images/passive.svg");
+    background-size: cover;
+    cursor: pointer;
+
+    @media (max-width: $break-point-tablet) {
+      transform: rotate(-90deg);
+      margin: 0;
+    }
+
+    &--active {
+      background-image: url("./../images/active.svg");
+      margin-top: 35px;
+
+      @media (max-width: $break-point-tablet) {
+        transform: rotate(-90deg);
+        margin: 0;
+      }
+    }
+  }
+
+  &__number {
+    font-size: 40px;
+    line-height: 47px;
+    color: #f1cc9d;
+    margin-bottom: 14px;
+
+    @media (max-width: $break-point-tablet) {
+      font-size: 40px;
+      line-height: 40px;
+      margin: 0;
+      color: #e39a3b;
+    }
+
+    @media (max-width: $break-point-mobile) {
+      font-size: 16px;
+      line-height: 16px;
+    }
+
+    &--active {
+      margin-bottom: -28px;
+      font-size: 176px;
+      line-height: 209px;
+      color: #412d22;
+
+      @media (max-width: $break-point-tablet) {
+        font-size: 80px;
+        line-height: 40px;
+        margin: 0;
+      }
+
+      @media (max-width: $break-point-mobile) {
+        font-size: 40px;
+        line-height: 40px;
+      }
+
+    }
+  }
+}

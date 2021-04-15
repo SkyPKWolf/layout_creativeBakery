@@ -1,0 +1,26 @@
+.nav {
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 34px;
+
+    @media (max-width: $break-point-tablet) {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    @media (max-width: $break-point-tablet) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__link {
+    padding: 5px;
+
+    @media (max-width: $break-point-tablet) {
+      margin-left: -5px;
+    }
+  }
+}

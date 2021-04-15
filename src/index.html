@@ -7,7 +7,64 @@
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
   <body>
-    <h1>Hello Mate Academy</h1>
-    <script type="text/javascript" src="scripts/main.js"></script>
+    <header class="header">
+      <div class="header__background"></div>
+      <div class="header__container">
+        <div class="header__top">
+          <a href="#">
+            <img
+              src="./images/logo.svg"
+              alt="Logo"
+              class="header__logo"
+            >
+          </a>
+          <div class="header__wrapper">
+            <div class="header__nav nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Bakery</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Bakershops</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">About</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Contacts</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header__call">
+              <a href="tel: +12345555555" class="header__call-number">+38 066 336 36 36</a>
+              <a href="#" class="header__call-button">Call back</a>
+              <select class="header__select">
+                <option value="1">En</option>
+                <option value="2">Ru</option>
+              </select>
+            </div>
+          </div>
+          <button class="header__burger" id="toggler"></button>
+        </div>
+        <div class="header__bottom">
+          <div class="header__left-bottom">
+            <h1 class="header__main-title">Creative bakery</h1>
+            <p class="header__text">
+              We bake your fantasies: croissants <br>
+              cakes, cookies, and cupcakes.
+            </p>
+            <a href="#" class="header__button">Learn more</a>
+          </div>
+          <div class="header__right-bottom">
+            <button class="header__switch"></button>
+            <div class="header__number header__number--active">01</div>
+            <div class="header__number">02</div>
+            <div class="header__number">03</div>
+            <button class="header__switch header__switch--active"></button>
+          </div>
+        </div>
+      </div>
+    </header>
   </body>
+  <script type="text/javascript" src="scripts/main.js"></script>
 </html>
