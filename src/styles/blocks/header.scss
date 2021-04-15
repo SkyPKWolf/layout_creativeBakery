@@ -73,7 +73,7 @@
     }
 
     @media (max-width: $break-point-tablet) {
-      position: fixed;
+      position: absolute;
       right: 0;
       top: 0;
       bottom: 0;
@@ -84,6 +84,9 @@
       padding: 85px 50px;
       transform: translateX(100%);
       overflow: scroll;
+    }
+    @media (max-width: $break-point-mobile) {
+      padding: 85px 16px;
     }
 
     &--active {
@@ -102,6 +105,10 @@
     @media (max-width: $break-point-notebook) {
       flex-direction: column;
     }
+    @media (max-width: $break-point-tablet) {
+      align-items: start;
+    }
+
   }
 
   &__call-number {
@@ -171,6 +178,7 @@
       margin: 0;
     }
     @media (max-width: $break-point-mobile) {
+      margin-bottom: 20px;
       font-size: 100px;
       line-height: 80%;
     }

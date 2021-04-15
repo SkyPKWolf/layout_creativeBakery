@@ -7,12 +7,16 @@
 
     @media (max-width: $break-point-tablet) {
       flex-direction: column;
+      gap: 0;
     }
   }
 
   &__item {
     @media (max-width: $break-point-tablet) {
       margin-bottom: 50px;
+    }
+    @media (max-width: $break-point-mobile) {
+      margin-bottom: 30px;
     }
   }
 

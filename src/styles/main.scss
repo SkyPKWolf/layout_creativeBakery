@@ -2,8 +2,12 @@
 @import "fonts";
 
 @import "./reset.scss";
+@import "./blocks/page.scss";
 @import "./blocks/header.scss";
 @import "./blocks/nav.scss";
+@import "./blocks/content.scss";
+@import "./blocks/bacery.scss";
+@import "./blocks/product.scss";
 
 * {
   box-sizing: border-box;
