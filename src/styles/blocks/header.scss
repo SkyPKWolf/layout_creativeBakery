@@ -18,7 +18,7 @@
     background-position: center;
 
     @media (max-width: $break-point-tablet) {
-      width: 100vw;
+      min-width: 100%;
       opacity: 0.8;
     }
     @media (min-width: 2000px) {
@@ -73,7 +73,7 @@
     }
 
     @media (max-width: $break-point-tablet) {
-      position: absolute;
+      position: fixed;
       right: 0;
       top: 0;
       bottom: 0;

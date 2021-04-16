@@ -66,9 +66,9 @@
       </div>
     </header>
     <main class="page__content content">
-      <section class="content__bakery bacery">
-        <h2 class="page__title" id="bacery">Bacery</h2>
-        <div class="bacery__product product">
+      <section class="content__bakery bakery">
+        <h2 class="page__title" id="bakery">Bakery</h2>
+        <div class="bakery__product product">
           <div class="product__discription">
             <h3 class="product__title">Cookies</h3>
             <h4 class="product__subtitle">Chocolate mix</h4>
@@ -90,7 +90,7 @@
             <button class="product__switch product__switch--active"></button>
           </div>
         </div>
-        <div class="bacery__product product product--revers">
+        <div class="bakery__product product product--revers">
           <div class="product__discription">
             <h3 class="product__title">Cakes</h3>
             <h4 class="product__subtitle">Mint coffee mocca</h4>
@@ -112,7 +112,7 @@
             <button class="product__switch product__switch--active"></button>
           </div>
         </div>
-        <div class="bacery__product product">
+        <div class="bakery__product product">
           <div class="product__discription">
             <h3 class="product__title">Croissants</h3>
             <h4 class="product__subtitle">Almond classic</h4>
@@ -134,7 +134,7 @@
             <button class="product__switch product__switch--active"></button>
           </div>
         </div>
-        <div class="bacery__product product product--revers">
+        <div class="bakery__product product product--revers">
           <div class="product__discription">
             <h3 class="product__title">Cupcakes</h3>
             <h4 class="product__subtitle">Triple creamy</h4>
@@ -156,9 +156,58 @@
             <button class="product__switch product__switch--active"></button>
           </div>
         </div>
-        <button class="product__button">All bakeries</button>
+        <button class="bakery__button">All bakeries</button>
       </section>
 
+      <section class="content__bakershops bakershops">
+        <h2 class="page__title">Bakershops</h2>
+        <div class="bakershops__container">
+          <div class="bakershops__search">
+            <select class="bakershops__list bakershops__list--city">
+              <option value="City">City</option>
+              <option value="Chernihiv">Chernihiv</option>
+              <option value="Dnipro">Dnipro</option>
+              <option value="Kharkiv">Kharkiv</option>
+              <option value="Kherson">Kherson</option>
+              <option value="Kyiv">Kyiv</option>
+              <option value="Lutsk">Lutsk</option>
+              <option value="Lviv">Lviv</option>
+              <option value="Poltava">Poltava</option>
+              <option value="Vinnytsya">Vinnytsya</option>
+              <option value="Zhytomyr">Zhytomyr</option>
+            </select>
+
+            <select class="bakershops__list bakershops__list--address">
+              <option value="Address">Address</option>
+              <option value="Address1">Address 1</option>
+              <option value="Address2">Address 2</option>
+              <option value="Address3">Address 3</option>
+            </select>
+
+            <button class="bakershops__button">Search</button>
+          </div>
+
+          <img
+              class="bakershops__image"
+              src="./images/map.png"
+              alt="map"
+            >
+
+          <div class="bakershops__zoom-map">
+            <button class="bakershops__zoom-button">
+              <span class="bakershops__plus">+</span>
+            </button>
+
+            <button class="bakershops__zoom-button">
+              <span class="bakershops__minus">-</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="content__about about">
+
+      </section>
       <!-- <h2 class="page__title">Bakershops</h2>
       <h2 class="page__title">About</h2>
       <h2 class="page__title">Contacts</h2> -->
