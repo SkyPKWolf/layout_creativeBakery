@@ -83,7 +83,7 @@
       flex-direction: column;
       padding: 85px 50px;
       transform: translateX(100%);
-      overflow: scroll;
+      overflow-y: scroll;
     }
     @media (max-width: $break-point-mobile) {
       padding: 85px 16px;

@@ -9,6 +9,8 @@
 @import "./blocks/bakery.scss";
 @import "./blocks/product.scss";
 @import "./blocks/bakershops.scss";
+@import "./blocks/about.scss";
+@import "./blocks/qualities.scss";
 
 * {
   box-sizing: border-box;
@@ -26,3 +28,16 @@ body {
   z-index: -3;
   background: $c-gray;
 }
+
+// ::-webkit-scrollbar {
+//   width: 10px; /* ширина для вертикального скролла */
+//   height: 10px; /* высота для горизонтального скролла */
+//   border-radius: 5px;
+
+// }
+
+// /* ползунок скроллбара */
+// ::-webkit-scrollbar-thumb {
+//   background-color: #f1cc9d;
+//   border-radius: 5px;
+// }

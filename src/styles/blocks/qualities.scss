@@ -1,0 +1,19 @@
+.qualities {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 12px;
+  }
+
+  &__value {
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 71px;
+    color: #412d22;
+    margin-bottom: 7px;
+  }
+}
