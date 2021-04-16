@@ -4,14 +4,18 @@
   max-width: 1600px;
   margin: 0 auto;
 
-  padding: 30px 65px;
+  padding: 30px $main-side-padding;
   @media (max-width: $break-point-mobile) {
-    padding: 30px 16px;
+    padding: 30px $mobile-side-padding;
+  }
+
+  &__title {
+    @extend %title;
   }
 
   &__product {
     margin-bottom: 135px;
-    
+
     @media (max-width: $break-point-tablet) {
       margin-bottom: 40px;
     }
@@ -19,7 +23,7 @@
 
   &__button {
     padding: 8px 38px;
-    background: #e39a3b;
+    background: $main-page-color;
     border-radius: 40px;
     margin: 0 auto 80px;
   }

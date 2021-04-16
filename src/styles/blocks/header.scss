@@ -1,7 +1,7 @@
 .header {
   position: relative;
   z-index: -1;
-  background-color: #e39a3b;
+  background-color: $main-page-color;
   height: 100vh;
 
   @media (max-width: $break-point-tablet) {
@@ -29,7 +29,7 @@
   &__container {
     display: flex;
     flex-direction: column;
-    padding: 34px 59px;
+    padding: 34px $main-side-padding;
     margin: 0 auto;
     max-width: 1600px;
     height: 80%;
@@ -78,7 +78,7 @@
       top: 0;
       bottom: 0;
       width: 50vw;
-      background-color: #e39a3b;
+      background-color: $main-page-color;
       z-index: 1;
       flex-direction: column;
       padding: 85px 50px;
@@ -86,7 +86,7 @@
       overflow-y: scroll;
     }
     @media (max-width: $break-point-mobile) {
-      padding: 85px 16px;
+      padding: 85px $mobile-side-padding;
     }
 
     &--active {
@@ -167,7 +167,7 @@
     font-family: "Cookie", sans-serif;
     font-size: 160px;
     line-height: 177px;
-    color: #412d22;
+    color: $main-font-color;
     margin-bottom: 20px;
 
     @media (max-width: $break-point-notebook) {
@@ -196,7 +196,7 @@
 
   &__button {
     padding: 9px 38px;
-    background: #e39a3b;
+    background: $main-page-color;
     border-radius: 40px;
   }
 
@@ -253,7 +253,7 @@
       font-size: 40px;
       line-height: 40px;
       margin: 0;
-      color: #e39a3b;
+      color: $main-page-color;
     }
 
     @media (max-width: $break-point-mobile) {
@@ -265,7 +265,7 @@
       margin-bottom: -28px;
       font-size: 176px;
       line-height: 209px;
-      color: #412d22;
+      color: $main-font-color;
 
       @media (max-width: $break-point-tablet) {
         font-size: 80px;

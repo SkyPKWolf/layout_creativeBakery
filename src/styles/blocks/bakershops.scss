@@ -2,7 +2,11 @@
   background-color: #f1cc9d;
   padding: 27px 30px;
   @media (max-width: $break-point-mobile) {
-    padding: 27px 16px;
+    padding: 27px $mobile-side-padding;
+  }
+
+  &__title {
+    @extend %title;
   }
 
   &__container {
@@ -32,7 +36,7 @@
   }
 
   &__list {
-    border-bottom: 1px solid #412d22;
+    border-bottom: 1px solid $main-font-color;
     opacity: 0.5;
 
     &--city {
@@ -60,7 +64,7 @@
 
   &__button {
     padding: 8px 38px;
-    background: #e39a3b;
+    background: $main-page-color;
     border-radius: 40px;
     @media (max-width: $break-point-tablet) {
       margin: 0 auto;

@@ -6,9 +6,13 @@
   max-width: 1600px;
   margin: 0 auto;
 
-  padding: 30px 65px;
+  padding: 30px $main-side-padding;
   @media (max-width: $break-point-mobile) {
-    padding: 30px 16px;
+    padding: 30px $mobile-side-padding;
+  }
+
+  &__title {
+    @extend %title;
   }
 
   &__text {

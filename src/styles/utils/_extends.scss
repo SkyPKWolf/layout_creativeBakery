@@ -1,4 +1,14 @@
 %title {
-  font-size: 16px;
-  font-weight: normal;
+  margin-top: 10px;
+
+  font-family: "Cookie", sans-serif;
+  font-size: 120px;
+  line-height: 133px;
+  text-align: center;
+  color: $main-page-color;
+
+  @media (max-width: $break-point-mobile) {
+    font-size: 60px;
+    line-height: 67px;
+  }
 }
