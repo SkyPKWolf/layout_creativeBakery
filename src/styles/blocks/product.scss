@@ -69,8 +69,7 @@
 
   &__button-price {
     display: flex;
-    width: 110px;
-    height: 110px;
+    @include square-container(110px);
     margin-bottom: 5px;
     justify-content: center;
     align-items: center;
@@ -79,8 +78,7 @@
     @extend %second-button;
 
     @media (max-width: $break-point-mobile) {
-      width: 65px;
-      height: 65px;
+      @include square-container(65px);
       flex-direction: column;
     }
   }

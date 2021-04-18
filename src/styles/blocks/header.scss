@@ -202,10 +202,6 @@
 
   &__button {
     @extend %button;
-
-    &:hover {
-      background-color: transparent;
-    }
   }
 
   &__left-bottom {
