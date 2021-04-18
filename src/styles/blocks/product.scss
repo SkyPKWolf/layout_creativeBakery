@@ -75,8 +75,8 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    background-color: #f1cc9d;
     font-weight: bold;
+    @extend %second-button;
 
     @media (max-width: $break-point-mobile) {
       width: 65px;
@@ -136,7 +136,11 @@
   }
   &__image {
     max-width: 60%;
+    transition: 0.3s transform linear;
 
+    &:hover {
+      transform: scale(1.2);
+    }
     @media (max-width: $break-point-mobile) {
       min-width: 230px;
     }

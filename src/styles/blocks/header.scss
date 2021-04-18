@@ -67,6 +67,7 @@
     width: 80%;
     justify-content: space-between;
     align-items: center;
+    transition: 0.3s transform linear;
 
     @media (max-width: $break-point-notebook) {
       align-items: flex-start;
@@ -121,8 +122,8 @@
     font-size: 16px;
     line-height: 24px;
     padding: 5px 15px;
-    background: #f1cc9d;
     border-radius: 40px;
+    @extend %second-button;
 
     @media (max-width: $break-point-tablet) {
       margin-bottom: 30px;
@@ -144,12 +145,15 @@
     background-image: url("./../images/burger.svg");
     background-size: cover;
 
+    transition: 0.3s transform linear;
+
     @media (max-width: $break-point-tablet) {
       display: block;
     }
 
     &--active {
       background-image: url("./../images/close.svg");
+      transform: rotate(180deg);
     }
   }
 
@@ -197,9 +201,11 @@
   }
 
   &__button {
-    padding: 9px 38px;
-    background: $main-page-color;
-    border-radius: 40px;
+    @extend %button;
+
+    &:hover {
+      background-color: transparent;
+    }
   }
 
   &__left-bottom {

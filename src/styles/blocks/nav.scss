@@ -27,10 +27,19 @@
 
   &__link {
     padding: 5px;
+    transition: 0.2s color linear;
+
+    &:hover {
+      color: #e39a3b;
+    }
 
     &--mobile {
+
       @media (max-width: $break-point-tablet) {
         margin-left: -5px;
+        &:hover {
+          color: #fff;
+        }
       }
     }
   }
