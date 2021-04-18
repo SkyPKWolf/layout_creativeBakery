@@ -134,8 +134,10 @@
   }
 
   &__burger {
-    position: relative;
+    position: fixed;
     z-index: 3;
+    right: 16px;
+    top: 30px;
     display: none;
     height: 25px;
     width: 25px;

@@ -63,9 +63,8 @@
   }
 
   &__button {
-    padding: 8px 38px;
-    background: $main-page-color;
-    border-radius: 40px;
+    @extend %button;
+
     @media (max-width: $break-point-tablet) {
       margin: 0 auto;
     }

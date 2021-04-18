@@ -2,7 +2,6 @@
 @import "fonts";
 
 @import "./reset.scss";
-@import "./blocks/page.scss";
 @import "./blocks/header.scss";
 @import "./blocks/nav.scss";
 @import "./blocks/content.scss";
@@ -12,6 +11,8 @@
 @import "./blocks/about.scss";
 @import "./blocks/qualities.scss";
 @import "./blocks/contacts.scss";
+@import "./blocks/feedback.scss";
+@import "./blocks/footer.scss";
 
 * {
   box-sizing: border-box;
@@ -29,16 +30,3 @@ body {
   z-index: -3;
   background: $c-gray;
 }
-
-// ::-webkit-scrollbar {
-//   width: 10px; /* ширина для вертикального скролла */
-//   height: 10px; /* высота для горизонтального скролла */
-//   border-radius: 5px;
-
-// }
-
-// /* ползунок скроллбара */
-// ::-webkit-scrollbar-thumb {
-//   background-color: #f1cc9d;
-//   border-radius: 5px;
-// }

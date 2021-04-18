@@ -12,3 +12,10 @@
     line-height: 67px;
   }
 }
+
+%button {
+  padding: 8px 60px;
+  background: $main-page-color;
+  border-radius: 40px;
+  cursor: pointer;
+}

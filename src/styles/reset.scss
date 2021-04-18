@@ -24,7 +24,8 @@ nav,
 section,
 button,
 textarea,
-select {
+select,
+input {
   margin: 0;
   padding: 0;
   border: none;
@@ -45,6 +46,8 @@ a {
 }
 
 button,
-select {
+select,
+input,
+textarea {
   background-color: transparent;
 }
