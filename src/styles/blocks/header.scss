@@ -75,7 +75,7 @@
 
     @media (max-width: $break-point-tablet) {
       position: fixed;
-      right: 0;
+      right: -50vw;
       top: 0;
       bottom: 0;
       width: 50vw;
@@ -83,7 +83,7 @@
       z-index: 1;
       flex-direction: column;
       padding: 85px 50px;
-      transform: translateX(100%);
+      transform: none;
       overflow-y: scroll;
     }
     @media (max-width: $break-point-mobile) {
@@ -92,7 +92,7 @@
 
     &--active {
       @media (max-width: $break-point-tablet) {
-        transform: none;
+        transform: translateX(-50vw);
       }
     }
   }
