@@ -2,7 +2,7 @@
 
 const toggler = document.querySelector('#toggler');
 const nav = document.querySelector('.header__wrapper');
-const navLink = document.querySelectorAll('.nav__link');
+const navLink = document.querySelectorAll('.nav__link--mobile');
 
 toggler.addEventListener('click', () => {
   nav.classList.toggle('header__wrapper--active');
